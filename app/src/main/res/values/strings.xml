@@ -1,3 +1,82 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">SmileCare</string>
+
+    <!-- Bienvenida -->
+    <string name="welcome_title">Tu sonrisa, en buenas manos</string>
+    <string name="welcome_subtitle">Pide cita en la clínica, consulta tratamientos y recibe recordatorios sin llamar por teléfono.</string>
+    <string name="welcome_benefit_1">Cita previa en 3 toques</string>
+    <string name="welcome_benefit_2">Recordatorios de tus revisiones</string>
+    <string name="welcome_benefit_3">Promociones exclusivas para pacientes</string>
+    <string name="btn_create_account">Crear cuenta</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="btn_guest">Explorar como invitado</string>
+    <string name="logo_description">Logotipo de SmileCare</string>
+
+    <!-- Registro -->
+    <string name="signup_title">Crea tu cuenta</string>
+    <string name="signup_subtitle">Solo necesitamos 3 datos. El resto, cuando pidas cita.</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="helper_name">Así te llamaremos en tus citas</string>
+    <string name="helper_password">Mínimo 8 caracteres, una mayúscula y un número</string>
+    <string name="terms_check">Acepto los términos y la política de privacidad</string>
+    <string name="btn_sign_up">Crear cuenta</string>
+    <string name="btn_creating">Creando cuenta…</string>
+    <string name="signup_have_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="signup_success">¡Cuenta creada! Bienvenido/a, %1$s</string>
+
+    <!-- Login -->
+    <string name="login_title">Bienvenido de nuevo</string>
+    <string name="login_subtitle">Inicia sesión para gestionar tus citas</string>
+    <string name="btn_sign_in">Entrar</string>
+    <string name="btn_signing_in">Entrando…</string>
+    <string name="btn_google">Continuar con Google</string>
+    <string name="login_forgot">¿Has olvidado tu contraseña?</string>
+    <string name="login_no_account">¿No tienes cuenta? Regístrate</string>
+    <string name="login_wrong_credentials">Correo o contraseña incorrectos. Intentos restantes: %1$d</string>
+    <string name="google_soon">El acceso con Google estará disponible próximamente</string>
+
+    <!-- Recuperación -->
+    <string name="recover_title">Recupera tu contraseña</string>
+    <string name="recover_subtitle">Te enviaremos un código de 6 dígitos a tu correo.</string>
+    <string name="btn_send_code">Enviar código</string>
+    <string name="recover_code_title">Introduce el código</string>
+    <string name="recover_code_subtitle">Hemos enviado un código a %1$s</string>
+    <string name="hint_code">Código de 6 dígitos</string>
+    <string name="hint_new_password">Nueva contraseña</string>
+    <string name="btn_verify">Verificar y cambiar contraseña</string>
+    <string name="recover_success">Contraseña actualizada. Ya puedes iniciar sesión</string>
+    <string name="recover_demo_hint">Demo: el código válido es 123456</string>
+
+    <!-- Errores -->
+    <string name="error_title">Algo ha salido mal</string>
+    <string name="error_default">No hemos podido completar la operación.</string>
+    <string name="error_too_many">Has superado el número de intentos. Por seguridad, bloqueamos el acceso unos minutos o puedes restablecer tu contraseña.</string>
+    <string name="btn_retry">Volver a intentarlo</string>
+    <string name="btn_reset_password">Restablecer contraseña</string>
+    <string name="error_icon_description">Icono de error</string>
+
+    <!-- Validaciones -->
+    <string name="err_name_empty">Escribe tu nombre</string>
+    <string name="err_email_empty">El correo es obligatorio</string>
+    <string name="err_email_format">Formato de correo no válido (ej. nombre@correo.com)</string>
+    <string name="err_password_empty">La contraseña es obligatoria</string>
+    <string name="err_password_short">Debe tener al menos 8 caracteres</string>
+    <string name="err_password_upper">Incluye al menos una mayúscula</string>
+    <string name="err_password_digit">Incluye al menos un número</string>
+    <string name="err_terms">Debes aceptar los términos para continuar</string>
+    <string name="err_code_invalid">Código incorrecto. Revisa tu correo</string>
+
+    <!-- Home -->
+    <string name="home_title_user">Hola, %1$s</string>
+    <string name="home_title_guest">Explorando como invitado</string>
+    <string name="home_body">Aquí irá el catálogo de tratamientos y la agenda de citas.</string>
+    <string name="btn_book">Pedir cita</string>
+    <string name="guest_wall">Regístrate o inicia sesión para pedir cita</string>
+    <string name="btn_logout">Cerrar sesión</string>
+    <string name="back">Volver</string>
+
+    <string name="err_email_taken">Ya existe una cuenta con este correo</string>
+    <string name="recover_sent">Si el correo existe, recibirás un código en unos instantes</string>
 </resources>

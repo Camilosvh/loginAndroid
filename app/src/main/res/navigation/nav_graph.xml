@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <!-- 1. Bienvenida -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.smilecare.fragments.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_signUp"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_welcome_to_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcome_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- 2. Registro -->
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.smilecare.fragments.SignUpFragment"
+        android:label="SignUp"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUp_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- 3. Login -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.smilecare.fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_recover"
+            app:destination="@id/recoverFragment" />
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_error"
+            app:destination="@id/errorFragment" />
+    </fragment>
+
+    <!-- 4. Recuperación / validación por código -->
+    <fragment
+        android:id="@+id/recoverFragment"
+        android:name="com.example.smilecare.fragments.RecoverFragment"
+        android:label="Recover"
+        tools:layout="@layout/fragment_recover">
+        <action
+            android:id="@+id/action_recover_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- 5. Error -->
+    <fragment
+        android:id="@+id/errorFragment"
+        android:name="com.example.smilecare.fragments.ErrorFragment"
+        android:label="Error"
+        tools:layout="@layout/fragment_error">
+        <action
+            android:id="@+id/action_error_to_recover"
+            app:destination="@id/recoverFragment"
+            app:popUpTo="@id/errorFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Pantalla final del flujo (invitado o usuario) -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.smilecare.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_welcome"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
